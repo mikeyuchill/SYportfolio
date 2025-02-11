@@ -31,8 +31,14 @@ for (let i = 0; i < headerSmallMenuLinks.length; i++) {
 }
 
 // ---
-const headerLogoConatiner = document.querySelector('.header__logo-container')
+const headerLogoContainer = document.querySelector('.header__logo-container')
 
-headerLogoConatiner.addEventListener('click', () => {
-  location.href = '/index.html'
+headerLogoContainer.addEventListener('click', () => {
+  if (window.location.hostname === 'localhost' || window.location.hostname.startsWith('127.')) {
+    // If running locally, redirect to /public/index.html
+    location.href = '/public/index.html';
+  } else {
+    // If hosted on Vercel, redirect to root index.html
+    location.href = '/index.html';
+  }
 })

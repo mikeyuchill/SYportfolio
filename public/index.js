@@ -42,3 +42,23 @@ headerLogoContainer.addEventListener('click', () => {
     location.href = '/index.html';
   }
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+  const lionmatchBtn = document.getElementById("lionmatch-btn");
+
+  if (window.location.hostname === 'localhost' || window.location.hostname.startsWith('127.')) {
+    lionmatchBtn.href = "/public/projects/LionMatch.html"; // Local path
+  } else {
+    lionmatchBtn.href = "/lionmatch"; // Pretty URL for Vercel
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const lionmatchBtn = document.getElementById("bixie-btn");
+
+  if (window.location.hostname === 'localhost' || window.location.hostname.startsWith('127.')) {
+    lionmatchBtn.href = "/public/projects/LionMatch.html"; // Local path
+  } else {
+    lionmatchBtn.href = "/lionmatch"; // Pretty URL for Vercel
+  }
+});

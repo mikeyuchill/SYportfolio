@@ -57,8 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const lionmatchBtn = document.getElementById("bixie-btn");
 
   if (window.location.hostname === 'localhost' || window.location.hostname.startsWith('127.')) {
-    lionmatchBtn.href = "/public/projects/LionMatch.html"; // Local path
+    lionmatchBtn.href = "/public/projects/Bixie.html"; // Local path
   } else {
-    lionmatchBtn.href = "/lionmatch"; // Pretty URL for Vercel
+    lionmatchBtn.href = "/bixie"; // Pretty URL for Vercel
   }
 });

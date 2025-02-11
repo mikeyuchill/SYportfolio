@@ -1,7 +1,6 @@
 {
-    "redirects": [
-      { "source": "/bixie", "destination": "/projects/Bixie.html", "permanent": true },
-      { "source": "/lionmatch", "destination": "/projects/LionMatch.html", "permanent": true }
+    "rewrites": [
+      { "source": "/lionmatch", "destination": "/projects/LionMatch.html" },
+      { "source": "/bixie", "destination": "/projects/Bixie.html" }
     ]
-}
-  
+  }

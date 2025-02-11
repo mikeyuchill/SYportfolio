@@ -1,0 +1,7 @@
+{
+    "redirects": [
+      { "source": "/bixie", "destination": "/projects/Bixie.html", "permanent": true },
+      { "source": "/lionmatch", "destination": "/projects/LionMatch.html", "permanent": true }
+    ]
+}
+  
